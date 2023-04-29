@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Epcritador</title>
+  </head>
+  <body>
+    <nav id="navegacion">
+      <img id="logo" src="rompecabezas.png" alt="" />
+      <h1>Epcritador de texto</h1>
+    </nav>
+    <div id="error">
+      <img id="imgError" src="error.png" alt="" />
+      Error! No se permiten caracteres especiales, letras mayúsculas ni datos
+      numéricos
+    </div>
+    <section id="cuerpo">
+      <!-- <div id="caja"> -->
+      <form id="formulario">
+        <textarea
+          name=""
+          id="texto"
+          placeholder="Ingrese texto aquí"
+        ></textarea>
+        <span id="texto2">
+          &#9888; Solo letras minúsculas, sin acentos, ni números
+        </span>
+
+        <div id="caja-botones">
+          <button class="boton" id="encriptar">Encriptar</button>
+          <button class="boton" id="desencriptar">Desencriptar</button>
+        </div>
+      </form>
+      <!-- </div> -->
+      <div id="mostrarTexto">
+        <img id="rompecabezas" src="archivo-encriptado.png" alt="" />
+        <p id="texto1">Ningún texto encriptado o desencriptado</p>
+        <p id="resultado"></p>
+        <button id="botonCopiar" onclick="copiarTexto()">Copiar texto</button>
+      </div>
+    </section>
+  </body>
+</html>
